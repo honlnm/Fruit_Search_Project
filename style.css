@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(255, 217, 0), rgb(202, 80, 2));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#search-container {
+  display: grid;
+  grid-template-columns: 25% 40% 10% 25%;
+  grid-template-rows: 50vh 50vh;
+}
+
+#fruit {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  height: 28px;
+  align-self: end;
+  font-size: 20px;
+  background-color: rgba(255, 244, 119, 0.4);
+}
+
+#submit-button {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  height: 28px;
+  width: 75px;
+  align-self: end;
+  margin-left: 5px;
+}
+
+#suggestion-list {
+  grid-column: 2/3;
+  grid-row: 2;
+  align-self: top;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: rgba(255, 244, 119, 0.4);
+  font-size: 20px;
+  list-style-type: none;
+}
+
+#submit-button:hover {
+  background-color: greenyellow;
+}
+
+li:hover {
+  background-color: rgba(255, 187, 119, 0.4);
+}
