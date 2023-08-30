@@ -42,6 +42,11 @@ function useSuggestion(e) {
 	input.value = selection.innerText;
 }
 
+function openSearch() {
+	window.open('http://google.com/search?q=fruit ' + input.value);
+}
+
 input.addEventListener('keyup', search);
 suggestions.addEventListener('click', useSuggestion);
+button.addEventListener('click', openSearch);
 
